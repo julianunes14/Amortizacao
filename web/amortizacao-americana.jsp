@@ -18,7 +18,7 @@
 <body>
     <%@include file="WEB-INF/components/header.jspf" %>
     <div class="container">
-        <h1 class="display-4"> Amortização Americana</h1>
+        <h1 class="display-4  p-5 text-center"> Amortização Americana</h1>
         <form>
             <div class="form-row">
                 <div class="col">
