@@ -1,7 +1,7 @@
 <%-- 
     Document   : home
     Created on : 12/09/2020, 13:10:22
-    Author     : Victo
+    Author     : Victor
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -25,22 +25,28 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="img\img1.jpg" style="height:80vh; opacity: 0.6;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 font-weight-bold">CÁLCULO DE AMORTIZAÇÃO</h1>
-                    <p class=" font-weight-bold">Amortização Constante</p>
+                    <h1 class="display-4 font-weight-bold text-dark">CÁLCULO DE AMORTIZAÇÃO</h1>
+                    <p class=" font-weight-bold text-dark">Amortização Constante: Forma de amortização de um empréstimo por prestações que incluem os juros, amortizando assim partes iguais do valor 
+                    total do empréstimo. </p>
+                     
                 </div>
             </div>
             <div class="carousel-item" >
-              <img class="d-block w-100" src="img/img2.jpg" style="height:80vh; opacity: 0.6;">
+              <img class="d-block w-100" src="img/img2.jpg" style="height:80vh; opacity: 0.6; filter:grayscale(100%);">
               <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 font-weight-bold">CÁLCULO DE AMORTIZAÇÃO</h1>
-                    <p class="font-weight-bold">Amortização Americana</p>
+                    <h1 class="display-4 font-weight-bold text-dark">CÁLCULO DE AMORTIZAÇÃO</h1>
+                    <p class="font-weight-bold text-dark">Amortização Americana: É um tipo de quitação de empréstimo para aqueles que desejam pagar com uma única parcela, porém os juros devem ser pagos 
+                    periodicamente ou, dependendo do contrato firmado entre as partes, 
+                    os juros são capitalizados e pagos junto ao valor principal</p>
+                    
               </div>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/img3.jpg" style="height:80vh; opacity: 0.6;">
               <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 font-weight-bold">CÁLCULO DE AMORTIZAÇÃO</h1>
-                    <p class="font-weight-bold">Tabela Price</p>
+                    <h1 class="display-4 font-weight-bold text-dark">CÁLCULO DE AMORTIZAÇÃO</h1>
+                    <p class="font-weight-bold text-dark">Tabela Price: É um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo</p>
+                     
               </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <%-- 
     Document   : amortizacao-constante
     Created on : 12/09/2020, 13:14:44
-    Author     : Victo
+    Author     : Maria Carolina
 --%>
 
 <%@page import="java.text.DecimalFormat"%>
@@ -18,7 +18,7 @@
     <body>
         <%@include file="WEB-INF/components/header.jspf" %>
         <header>
-        <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron jumbotron-fluid bg-secondary">
             <div class="container">
               <h1 class="display-4 text-center text-white"> Amortização constante</h1>
               <p class="lead text-center text-white">Calcule aqui sua <b>Amortização Constante</b></p>
@@ -30,20 +30,20 @@
             <div class="form-row p-3 border ">
                 <div class="col text-center">
                   <label for="valorFinanciamento">Valor do financiamento</label>
-                  <input type="number" min="1" id="valorFinanciamento" class="form-control" name="valorDivida" placeholder="Insira aqui o valor do financiamento">
+                  <input type="number" min="1" id="valorFinanciamento" class="form-control" name="valorDivida" placeholder="Em R$">
                 </div>
                 <div class="col text-center">
-                  <label for="valorFinanciamento">Quantidade de Parcelas</label>
-                  <input type="number" min="1" class="form-control" name="periodo" placeholder="Parcelas">
+                  <label for="qtdParcelas">Quantidade de Parcelas</label>
+                  <input type="number" min="1" id="qtdParcelas" class="form-control" name="periodo" placeholder="Número de parcelas">
                 </div>
                 <div class="col text-center">
-                  <label for="valorFinanciamento">Valor da Taxa</label>
-                  <input type="number" min="1" class="form-control" name="taxa" placeholder="Taxa (a.m)">
+                  <label for="vlTaxa">Valor da Taxa (a.m)</label>
+                  <input type="number" min="1" id="vlTaxa" class="form-control" name="taxa" placeholder="Em %">
                 </div>
             </div>
-                <div class="text-center">
+                <div class="text-center mt-5 mb-5">
                 <button type="reset" class="btn btn-outline-warning">Limpar</button>
-                <button type="submit" class="btn btn-outline-success" >Calcular</button>
+                <button type="submit" class="btn btn-outline-success ml-5" >Calcular</button>
                 </div>
             </form>
         </div>
@@ -60,7 +60,7 @@
                 amortizacao = saldoDevedor / periodo;
             %>
             <div class="container">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-dark">
             <thead>
               <tr>
                 <th scope="col"> Período </th>

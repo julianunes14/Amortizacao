@@ -1,6 +1,6 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <a class="navbar-brand text-white" href="#">Fatec PG</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -12,9 +12,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="index.jsp#classes">Classes desenvolvidas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.jsp#sobre">Sobre o projeto</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="index.jsp#equipe">Equipe</a>

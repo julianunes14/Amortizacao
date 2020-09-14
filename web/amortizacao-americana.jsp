@@ -1,7 +1,7 @@
 <%-- 
     Document   : amortizacao-americana
     Created on : 12/09/2020, 13:14:58
-    Author     : Victo
+    Author     : Victor
 --%>
 
 <%@page import="java.text.NumberFormat"%>
@@ -18,7 +18,7 @@
 <body>
     <%@include file="WEB-INF/components/header.jspf" %>
     <header>
-        <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron jumbotron-fluid bg-secondary">
             <div class="container">
               <h1 class="display-4 text-center text-white">Amortização Americana</h1>
               <p class="lead text-center text-white">Calcule aqui sua <b>Amortização Americana</b></p>

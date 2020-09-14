@@ -18,7 +18,7 @@
     <body>
      <%@include file="WEB-INF/components/header.jspf" %>
         <header>
-        <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron jumbotron-fluid bg-secondary">
             <div class="container">
               <h1 class="display-4 text-center text-white"> Amortização Tabela Price</h1>
               <p class="lead text-center text-white">Calcule aqui sua <b>Amortização - Tabela Price</b></p>
