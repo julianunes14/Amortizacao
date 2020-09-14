@@ -17,22 +17,35 @@
 </head>
 <body>
     <%@include file="WEB-INF/components/header.jspf" %>
-    <div class="container">
-        <h1 class="display-4  p-5 text-center"> Amortização Americana</h1>
-        <form>
-            <div class="form-row">
-                <div class="col">
-                  <input type="number" min="1" class="form-control" name="valorFinanciamento" placeholder="Valor do Financiamento">
+    <header>
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+              <h1 class="display-4 text-center text-white">Amortização Americana</h1>
+              <p class="lead text-center text-white">Calcule aqui sua <b>Amortização Americana</b></p>
+            </div>
+        </div>
+        </header>
+        <div class="container">
+            <form>
+            <div class="form-row p-3">
+                <div class="col text-center">
+                  <label for="valorFinanciamento">Valor do financiamento</label>
+                  <input type="number" min="1" id="valorFinanciamento" class="form-control" name="valorFinanciamento" placeholder="Insira aqui o valor do financiamento">
                 </div>
-                <div class="col">
+                <div class="col text-center">
+                  <label for="parcelas">Quantidade de Parcelas</label>
                   <input type="number" min="1" class="form-control" name="parcelas" placeholder="Parcelas">
                 </div>
-                <div class="col">
+                <div class="col text-center">
+                  <label for="taxa">Valor da Taxa</label>
                   <input type="number" min="1" class="form-control" name="taxa" placeholder="Taxa (a.m)">
                 </div>
-                <button type="submit" class="btn btn-primary">Calcular</button>
             </div>
-        </form>
+                <div class="text-center">
+                <button type="reset" class="btn btn-outline-primary">Limpar</button>
+                <button type="submit" class="btn btn-outline-primary" >Calcular</button>
+                </div>
+            </form>
         <%
             try {
                 double divida = Double.parseDouble(request.getParameter("valorFinanciamento"));
@@ -40,8 +53,8 @@
                 double tax = Double.parseDouble(request.getParameter("taxa"));
                 double parcela = 0, montante = 0, totalJuros = 0, totalDivida = 0;
         %>
-        <div class="container">
-        <table class="table table-bordered">
+        <div class="container mt-5">
+        <table class="table table-bordered table-dark">
             <thead>
               <tr>
                 <th scope="col"> Período </th>
