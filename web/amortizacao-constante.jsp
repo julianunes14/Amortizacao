@@ -55,7 +55,7 @@
                 int periodo = Integer.parseInt(request.getParameter("periodo"));
                 double taxa = Double.parseDouble(request.getParameter("taxa")) / 100;
                 NumberFormat nf = new DecimalFormat("#,##0.00");
-                double prestacaoMensal = 0, tPrestacaoMensal = 0, saldoDevedor = valorDivida, totalJuros = 0, juros = 0, tAmortizacao = 0, amortizacao = 0;
+                double prestacaoMensal = 0, totalPrestacaoMensal = 0, saldoDevedor = valorDivida, totalJuros = 0, juros = 0, totalAmortizacao = 0, amortizacao = 0;
                 //a amortização do sistema SAC é constante, por isso valor esta calculado antes do for
                 amortizacao = saldoDevedor / periodo;
             %>
@@ -79,13 +79,12 @@
                     <td><%= NumberFormat.getCurrencyInstance().format(saldoDevedor)%></td>                             
                 </tr>
             <% for (int i = 1; i <= periodo; i++) {
-                            //juros é calculado primeiro fora do for pois é feito com base no valor inicial da dívida
                             juros = saldoDevedor * taxa;
                             prestacaoMensal = amortizacao + (saldoDevedor * taxa);
-                            tPrestacaoMensal = tPrestacaoMensal + prestacaoMensal;
+                            totalPrestacaoMensal = totalPrestacaoMensal + prestacaoMensal;
                             //nesta linha é concatenado o juros anterior e depois soma com todos os juros calculados no loop
                             totalJuros = totalJuros + juros;
-                            tAmortizacao = amortizacao + tAmortizacao;
+                            totalAmortizacao = amortizacao + totalAmortizacao;
                     %>
                     <tr>
                         <td><%= i%></td> <!-- representa o período conforme a iteração do for (o mês/parcela) -->
@@ -101,9 +100,9 @@
                     </tr>
                     <tr>
                         <td><%="TOTAL"%></td>
-                        <td><%= NumberFormat.getCurrencyInstance().format(tPrestacaoMensal)%></td>
+                        <td><%= NumberFormat.getCurrencyInstance().format(totalPrestacaoMensal)%></td>
                         <td><%= NumberFormat.getCurrencyInstance().format(totalJuros)%></td>
-                        <td><%= NumberFormat.getCurrencyInstance().format(tAmortizacao)%></td>
+                        <td><%= NumberFormat.getCurrencyInstance().format(totalAmortizacao)%></td>
                         <td> - </td>
                     </tr>
                 </tbody>
