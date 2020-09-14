@@ -41,7 +41,7 @@
                 </div>
                 <div class="col text-center">
                   <label for="valorFinanciado">Valor da Taxa</label>
-                  <input type="number" min="1" class="form-control" name="taxa" placeholder="Taxa por cento (%): Ex.: 5">
+                  <input type="number" min="1" class="form-control" name="taxa" placeholder="Taxa (a.m) por cento (%): Ex.: 5">
                 </div>
             </div>
                 <div class="text-center">
