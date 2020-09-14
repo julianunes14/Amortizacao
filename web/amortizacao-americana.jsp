@@ -38,7 +38,7 @@
                 </div>
                 <div class="col text-center">
                   <label for="taxa">Valor da Taxa</label>
-                  <input type="number" min="1" class="form-control" name="taxa" placeholder="Taxa (a.m)">
+                  <input type="text" min="1" class="form-control" name="taxa" placeholder="Taxa (a.m)">
                 </div>
             </div>
                 <div class="text-center">

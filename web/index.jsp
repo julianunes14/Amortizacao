@@ -45,7 +45,7 @@
               <img class="d-block w-100" src="img/img3.jpg" style="height:80vh; opacity: 0.6;">
               <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 font-weight-bold text-dark">CÁLCULO DE AMORTIZAÇÃO</h1>
-                    <p class="font-weight-bold text-dark">Tabela Price: É um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo</p>
+                    <p class="font-weight-bold text-dark">Tabela Price: É um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. Usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo</p>
                      
               </div>
             </div>
@@ -94,9 +94,30 @@
               </div>
             </div>
         </div>
-    </div>  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</body>
+    </div> 
+    <div class="container mt-5 text-center" id="equipe">
+        <h1>Equipe</h1>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" src="img/maria.jpg" width="140" height="140" >
+              <h2 class="mt-2 mb-2">Maria Martins</h2>
+              <p>Desenvolveu a classe Amortização Constante</p>
+              <p><a class="btn btn-outline-primary" href="http://www.github.com/MariaCarolinaa" target="_blank" role="button">Ver github &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" src="img/victor.jpg" width="140" height="140" >              
+              <h2 class="mt-2 mb-2">Victor Luã</h2>
+              <p>Desenvolveu a classe Amortização Americana</p>
+              <p><a class="btn btn-outline-primary" href="http://www.github.com/victor212luan" target="_blank" role="button">Ver github &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" src="img/julia.jpg" width="140" height="140" >              
+              <h2 class="mt-2 mb-2">Júlia Nunes</h2>
+              <p>Desenvolveu a classe Tabela Price</p>
+              <p><a class="btn btn-outline-primary" href="http://www.github.com/julianunes14" target="_blank" role="button">Ver github &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <%@include file="WEB-INF/components/footer.jspf" %>
+    </body>
 </html>
